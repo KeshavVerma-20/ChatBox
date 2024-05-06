@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All chats</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cen">
+      <h2>All Chats</h2>
+      <form action="/chats/new" method="GET">
+        <button class="button-63" role="button">New Chat</button>
+      </form>
+    </div>
+    <br />
+    <div class="ishan">
+      <%for(chat of chats){%>
+      <div class="chat">
+        <p>From: <i><%= chat.from %></i></p>
+        <div class="msg">
+          <div class="msg-upper">
+          <div class="photo">
+            <img
+              src="https://img.freepik.com/free-vector/logo-template_23-2149852453.jpg?w=360&t=st=1708421090~exp=1708421690~hmac=f740e6768e492da993bda1d38a35abc7b58c24c2d491e83432fe50dc2036537f"
+              style="width: 60px; border-radius: 20%"
+              alt=""
+            />
+          </div>
+          <div class="msg-content">
+            
+            <form action="/chats/<%= chat.id %>/edit" method="GET">
+              <button class="button-63 mybtn" role="button">Edit</button>
+            </form>
+            <br />
+            <form action="/chats/<%= chat.id %>?_method=DELETE" method="POST">
+              <button class="button-63 mybtn" role="button">Delete</button>
+            </form>
+          </div>
+        </div>
+        <div class="msg-btn">
+            <p>Msg: <%= chat.msg %></p>
+          </div>
+        </div>
+        <p>Received By: <%= chat.to %></p>
+        <hr />
+        <!-- for time only -->
+        <p><%= chat.created_at.toString().split(" ")[4] %></p>
+        <p><%= chat.created_at.toString().split(" ").slice(0,4).join(" ") %></p>
+        <!-- Date ka pur format aa jayega -->
+        <p><%= chat.created_at %></p>
+      </div>
+      <br />
+      <br />
+      <% }%>
+    </div>
+  </body>
+</html>

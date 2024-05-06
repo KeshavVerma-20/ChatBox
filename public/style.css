@@ -1,0 +1,103 @@
+body{
+    margin-left: 20px;
+    /* font-style: oblique; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e3e3ee;
+}
+.cen{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CSS */
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#c4a7d8, #767294 50%,#82abae);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  /* max-width: 25%; */
+ width: 100px;
+
+  padding: 5px 5px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+.mybtn{
+    width: 65px;
+}
+
+/* @media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+} */
+
+.chat{
+    width: 300px;
+    background-color: rgb(9, 164, 195);
+    padding: 20px;
+    border-radius: 16px;
+    display: inline-block;
+    margin: 1.4rem;
+}
+.ishan{
+    /* border: 3px solid black; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* gap: 2.5rem; */
+    max-width: 1200px;
+    height: auto;
+    flex-wrap: wrap;
+margin: 0 auto;
+}
+.msg{
+    background-color: rgb(72, 155, 233);
+    color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+    border: 1px solid white;
+}
+.msg-upper{
+    display: flex;
+   gap: 2.5rem;
+   /* border: 2px solid blue; */
+}
+.msg-content{
+    display: flex;
+gap: 1rem;
+
+}
+
+.msg-btn{
+    /* border: 2px solid red; */
+ display: flex;
+ align-items: flex-start;
+ width: 95%;
+ justify-content: flex-start;
+}
